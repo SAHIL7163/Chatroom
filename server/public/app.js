@@ -1,4 +1,4 @@
-const socket = io('ws://chatroom-ptxl.onrender.com:3500');
+const socket = io('ws://chatroom-backend-1xhw.onrender.com:3500');
 
 const msgInput = document.querySelector('#message')
 const nameInput = document.querySelector('#name')
