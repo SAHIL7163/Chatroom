@@ -128,14 +128,16 @@ function buildMsg(name , text)
     console.log(name);
     console.log(text);
     return {
-        name ,
-        text ,
-        time : new Intl.DateTimeFormat('default' , {
-            hour : 'numeric',
-            minute : 'numeric' ,
-            second : 'numeric'
-        }).format(new Date())
-    }
+    name,
+    text,
+    time: new Intl.DateTimeFormat('en-IN', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false, // Set to true if you want 12-hour format with AM/PM
+        timeZone: 'Asia/Kolkata'
+    }).format(new Date())
+};
 }
 
 //User function
